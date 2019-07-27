@@ -1,0 +1,98 @@
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+.postblock-wrapper {
+  width: 100%; 
+}
+.postblock-wrapper .col-md-2 {
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+  display: inline-block;
+  float: left;
+}
+.postblock-wrapper .col-md-3 {
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  -ms-flex: 0 0 33.333333%;
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+  display: inline-block;
+  float: left;
+}
+.postblock-wrapper .col-md-4 {
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+    display: inline-block;
+    float: left;
+}
+.postblock-wrapper h2 {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  line-height: 20px;
+}
+
+
+.postblock-wrapper .col-md-6 {
+  width: 50%;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+  display: inline-block;
+  float: left;
+}
+
+.col-md-6.full-content {
+  float: left;
+  min-height: 300px;
+}
+.post-content-wrapper.right img {
+    width: 110px;
+    float: left;
+    height: 75px;
+    margin-right: 15px;
+}
+.style2 .post-content-wrapper img {
+  width: 120px;
+  height: 100px;
+}
+.post-content-wrapper a {
+  display: block;
+}
+.style2 .post-content-wrapper {
+  height: 100px;
+  margin-bottom: 30px;
+}
+.content-img {
+  float: left;
+  margin-right: 15px;
+}
+.post-content-wrapper.right {
+  margin-bottom: 30px;
+}
+.content {
+  padding: 18px 20px 20px;
+}
+.post-content-wrapper {
+  margin-bottom: 30px;
+}
