@@ -8,7 +8,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 function gutenberg_post_block_assets() { # phpcs:ignore
 	# Styles.
 	wp_enqueue_style(
-		'my_block-cgb-style-css', # Handle.
+		'post-block-style-css', # Handle.
 		plugins_url( 'dist/blocks.style.build.css', dirname( __FILE__ ) ), 
 		array( 'wp-editor' )
 	);
@@ -19,7 +19,7 @@ add_action( 'enqueue_block_assets', 'gutenberg_post_block_assets' );
 function gutenberg_post_editor_assets() { # phpcs:ignore
 	# Styles.
 	wp_enqueue_style(
-		'my_block-cgb-block-editor-css', # Handle.
+		'post-block-editor-css', # Handle.
 		plugins_url( 'dist/blocks.editor.build.css', dirname( __FILE__ ) ),
 		array( 'wp-edit-blocks' )
 	);
@@ -30,7 +30,7 @@ add_action( 'enqueue_block_editor_assets', 'gutenberg_post_editor_assets' );
 
 function dynamic_block_hook(){
 	wp_enqueue_script(
-		'my_block-cgb-block-js', // Handle.
+		'post-block-js', // Handle.
 		plugins_url( '/dist/blocks.build.js', dirname( __FILE__ ) ),
 		array( 'wp-blocks', 'wp-i18n', 'wp-element', 'wp-editor' ),
 		true 
@@ -40,7 +40,7 @@ function dynamic_block_hook(){
 	register_block_type(
 		'postblock/gutenberg-post-block',
 		[ 
-		'editor_script' 	=> 'my_block-cgb-block-js',
+		'editor_script' 	=> 'post-block-js',
 		'render_callback' 	=> 'gutenberg_post_block_func'
 		]
 	);
