@@ -12,7 +12,7 @@
     "@wordpress/date": "^3.3.0",
     "bootstrap": "^4.3.1",
     "cgb-scripts": "1.18.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "reactstrap": "^8.0.1"
